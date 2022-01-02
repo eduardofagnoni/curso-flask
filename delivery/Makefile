@@ -1,5 +1,5 @@
-hello:
-	echo "hello"
-
 install:
-	pip install -e .
+	pip install -e .['dev']
+
+test:
+	pytest tests/ -v --cov=delivery
